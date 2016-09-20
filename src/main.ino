@@ -38,6 +38,8 @@ bool check_filters(){
   int check_850 = filtro850_1-filtro850_2;
   int check_1900 = (filtro1900_1*2)-(filtro1900_2/2);
 
+  Serial.print(check_850);Serial.print(" , ");Serial.println(check_1900);
+
   if( check_850 <= 35 && check_850 >= (-50)){
     return true;
   }
